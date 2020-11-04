@@ -1,12 +1,6 @@
-setInterval(() => {
-	checkWidht
-}, 4000);
 
-
-//
 let droweCards = (slidesToShow) => {
 
-	//
 	let position = 0;
 	const slidesToScroll = 1; 
 
@@ -19,7 +13,6 @@ let droweCards = (slidesToShow) => {
 	const itemsCount = items.length;
 	const itemWidth = container.clientWidth / slidesToShow;
 	const movePosition = slidesToScroll * itemWidth;
-
 
 	//Задаем минимальную ширину для всех item
 	items.forEach((item) => {
@@ -67,7 +60,7 @@ let droweCards = (slidesToShow) => {
 
 	checkBtns();
 }
-//
+//адаптив
 window.addEventListener("resize", function(event) {
 	checkWidht()
 }) 
